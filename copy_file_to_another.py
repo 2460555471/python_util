@@ -1,14 +1,17 @@
-# import os
-# import shutil
-#
-# dir_path=u"E:/results/"
-# list=os.listdir(dir_path)
-# for i in list:
-#     aa,bb=i.split(".")
-#
-#     oldname= dir_path+aa+"."+bb
-#     newname=aa+"."+bb
-#     shutil.copyfile(oldname,newname)
+# -*- coding: utf-8 -*-
+import os
+import shutil
+
+if __name__=='__main__':
+    dir_path = u"E:/results/"
+    list = os.listdir(dir_path)
+    for i in list:
+        aa, bb = i.split(".")
+
+        oldname = dir_path + aa + "." + bb
+        newname = "test_images/"+aa + "." + bb
+        shutil.copyfile(oldname, newname)
+
 
 # import os
 # for root, dirs, files in os.walk(".", topdown=True):
