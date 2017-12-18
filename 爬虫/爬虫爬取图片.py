@@ -20,5 +20,4 @@ def getImg(html):
 
 if __name__=='__main__':
     html = getHtml("http://tieba.baidu.com/p/2460150866")
-
     print(getImg(html))
