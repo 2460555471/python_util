@@ -8,6 +8,8 @@ if __name__=='__main__':
     list = os.listdir(dir_path)
     for i in list:
         aa, bb = i.split(".")
+        aa, bb = i.split(".")
+
 
         oldname = dir_path + aa + "." + bb
         newname = "test_images/"+aa + "." + bb
